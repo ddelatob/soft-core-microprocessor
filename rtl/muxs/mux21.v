@@ -1,7 +1,9 @@
-module mux21 (
-    input [1:0] in,
+module mux21 #(
+    parameter WIDTH = 32
+)(
+    input [WIDTH-1:0] in [1:0],
     input sel,
-    output out
+    output [WIDTH-1:0] out
 );
     wire not_sel;
     wire w1, w2;

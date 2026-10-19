@@ -1,7 +1,7 @@
 module decoder416(
-    input [3:0] in;
-    input en;
-    output [15:0] out;
+    input [3:0] in,
+    input en,
+    output [15:0] out
 );
 
 wire not_in3, not_in3_and_en, in3_and_en;

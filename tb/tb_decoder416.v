@@ -13,7 +13,7 @@ decoder416 d(
 );
 
 initial begin
-    target_out = 16'h0001;
+    target_out = 1;
     test_en = 1;
     for(i = 0; i <= 15; i = i + 1) begin
         test_in = i[3:0];

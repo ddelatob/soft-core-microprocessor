@@ -14,6 +14,12 @@ initial begin
 
     test_in = 2'b01; #10;
     assert (test_out == 4'b0010) else $error("Error: Input: 01, got %b, expected 0010", test_out);
+
+    test_in = 2'b10; #10;
+    assert (test_out == 4'b0100) else $error("Error: Input: 01, got %b, expected 0010", test_out);
+
+    test_in = 2'b11; #10;
+    assert (test_out == 4'b1000) else $error("Error: Input: 01, got %b, expected 0010", test_out);
     $finish;
 end
 

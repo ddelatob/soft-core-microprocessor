@@ -8,66 +8,86 @@
 :vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/local/lib/ivl/va_math.vpi";
 :vpi_module "/usr/local/lib/ivl/v2009.vpi";
-S_0x58a6ea2f6080 .scope package, "$unit" "$unit" 2 1;
+S_0x620cf5969590 .scope package, "$unit" "$unit" 2 1;
  .timescale 0 0;
-S_0x58a6ea307590 .scope module, "tb_decoder21" "tb_decoder21" 3 1;
+S_0x620cf5969720 .scope module, "tb_decoder21" "tb_decoder21" 3 1;
  .timescale 0 0;
-v0x58a6ea31c220_0 .var "test_in", 1 0;
-v0x58a6ea31c2e0_0 .net "test_out", 3 0, L_0x58a6ea31cb00;  1 drivers
-S_0x58a6ea307720 .scope module, "uut" "decoder24" 3 5, 4 1 0, S_0x58a6ea307590;
+v0x620cf5980190_0 .var "test_in", 1 0;
+v0x620cf5980250_0 .net "test_out", 3 0, L_0x620cf5980a70;  1 drivers
+S_0x620cf59698b0 .scope module, "uut" "decoder24" 3 5, 4 1 0, S_0x620cf5969720;
  .timescale 0 0;
     .port_info 0 /INPUT 2 "in";
     .port_info 1 /OUTPUT 4 "out";
-L_0x58a6ea31c3b0 .functor NOT 1, L_0x58a6ea31c480, C4<0>, C4<0>, C4<0>;
-L_0x58a6ea31c570 .functor NOT 1, L_0x58a6ea31c600, C4<0>, C4<0>, C4<0>;
-L_0x58a6ea31c6f0 .functor AND 1, L_0x58a6ea31c3b0, L_0x58a6ea31c570, C4<1>, C4<1>;
-L_0x58a6ea31c800 .functor AND 1, L_0x58a6ea31c8a0, L_0x58a6ea31c570, C4<1>, C4<1>;
-L_0x58a6ea31c990 .functor AND 1, L_0x58a6ea31c3b0, L_0x58a6ea31ca30, C4<1>, C4<1>;
-L_0x58a6ea31cce0 .functor AND 1, L_0x58a6ea31cde0, L_0x58a6ea31cf10, C4<1>, C4<1>;
-v0x58a6ea307950_0 .net *"_ivl_1", 0 0, L_0x58a6ea31c480;  1 drivers
-v0x58a6ea31b670_0 .net *"_ivl_10", 0 0, L_0x58a6ea31c990;  1 drivers
-v0x58a6ea31b750_0 .net *"_ivl_13", 0 0, L_0x58a6ea31ca30;  1 drivers
-v0x58a6ea31b810_0 .net *"_ivl_14", 0 0, L_0x58a6ea31cce0;  1 drivers
-v0x58a6ea31b8f0_0 .net *"_ivl_18", 0 0, L_0x58a6ea31cde0;  1 drivers
-v0x58a6ea31ba20_0 .net *"_ivl_20", 0 0, L_0x58a6ea31cf10;  1 drivers
-v0x58a6ea31bb00_0 .net *"_ivl_3", 0 0, L_0x58a6ea31c600;  1 drivers
-v0x58a6ea31bbe0_0 .net *"_ivl_4", 0 0, L_0x58a6ea31c6f0;  1 drivers
-v0x58a6ea31bcc0_0 .net *"_ivl_6", 0 0, L_0x58a6ea31c800;  1 drivers
-v0x58a6ea31bda0_0 .net *"_ivl_9", 0 0, L_0x58a6ea31c8a0;  1 drivers
-v0x58a6ea31be80_0 .net "in", 1 0, v0x58a6ea31c220_0;  1 drivers
-v0x58a6ea31bf60_0 .net "not_in0", 0 0, L_0x58a6ea31c3b0;  1 drivers
-v0x58a6ea31c020_0 .net "not_in1", 0 0, L_0x58a6ea31c570;  1 drivers
-v0x58a6ea31c0e0_0 .net "out", 3 0, L_0x58a6ea31cb00;  alias, 1 drivers
-L_0x58a6ea31c480 .part v0x58a6ea31c220_0, 0, 1;
-L_0x58a6ea31c600 .part v0x58a6ea31c220_0, 1, 1;
-L_0x58a6ea31c8a0 .part v0x58a6ea31c220_0, 0, 1;
-L_0x58a6ea31ca30 .part v0x58a6ea31c220_0, 1, 1;
-L_0x58a6ea31cb00 .concat8 [ 1 1 1 1], L_0x58a6ea31c6f0, L_0x58a6ea31c800, L_0x58a6ea31c990, L_0x58a6ea31cce0;
-L_0x58a6ea31cde0 .part v0x58a6ea31c220_0, 0, 1;
-L_0x58a6ea31cf10 .part v0x58a6ea31c220_0, 1, 1;
-    .scope S_0x58a6ea307590;
+L_0x620cf5980320 .functor NOT 1, L_0x620cf59803f0, C4<0>, C4<0>, C4<0>;
+L_0x620cf59804e0 .functor NOT 1, L_0x620cf5980570, C4<0>, C4<0>, C4<0>;
+L_0x620cf5980660 .functor AND 1, L_0x620cf5980320, L_0x620cf59804e0, C4<1>, C4<1>;
+L_0x620cf5980770 .functor AND 1, L_0x620cf5980810, L_0x620cf59804e0, C4<1>, C4<1>;
+L_0x620cf5980900 .functor AND 1, L_0x620cf5980320, L_0x620cf59809a0, C4<1>, C4<1>;
+L_0x620cf5980c50 .functor AND 1, L_0x620cf5980d50, L_0x620cf5980e80, C4<1>, C4<1>;
+v0x620cf592e5a0_0 .net *"_ivl_1", 0 0, L_0x620cf59803f0;  1 drivers
+v0x620cf597f5e0_0 .net *"_ivl_10", 0 0, L_0x620cf5980900;  1 drivers
+v0x620cf597f6c0_0 .net *"_ivl_13", 0 0, L_0x620cf59809a0;  1 drivers
+v0x620cf597f780_0 .net *"_ivl_14", 0 0, L_0x620cf5980c50;  1 drivers
+v0x620cf597f860_0 .net *"_ivl_18", 0 0, L_0x620cf5980d50;  1 drivers
+v0x620cf597f990_0 .net *"_ivl_20", 0 0, L_0x620cf5980e80;  1 drivers
+v0x620cf597fa70_0 .net *"_ivl_3", 0 0, L_0x620cf5980570;  1 drivers
+v0x620cf597fb50_0 .net *"_ivl_4", 0 0, L_0x620cf5980660;  1 drivers
+v0x620cf597fc30_0 .net *"_ivl_6", 0 0, L_0x620cf5980770;  1 drivers
+v0x620cf597fd10_0 .net *"_ivl_9", 0 0, L_0x620cf5980810;  1 drivers
+v0x620cf597fdf0_0 .net "in", 1 0, v0x620cf5980190_0;  1 drivers
+v0x620cf597fed0_0 .net "not_in0", 0 0, L_0x620cf5980320;  1 drivers
+v0x620cf597ff90_0 .net "not_in1", 0 0, L_0x620cf59804e0;  1 drivers
+v0x620cf5980050_0 .net "out", 3 0, L_0x620cf5980a70;  alias, 1 drivers
+L_0x620cf59803f0 .part v0x620cf5980190_0, 0, 1;
+L_0x620cf5980570 .part v0x620cf5980190_0, 1, 1;
+L_0x620cf5980810 .part v0x620cf5980190_0, 0, 1;
+L_0x620cf59809a0 .part v0x620cf5980190_0, 1, 1;
+L_0x620cf5980a70 .concat8 [ 1 1 1 1], L_0x620cf5980660, L_0x620cf5980770, L_0x620cf5980900, L_0x620cf5980c50;
+L_0x620cf5980d50 .part v0x620cf5980190_0, 0, 1;
+L_0x620cf5980e80 .part v0x620cf5980190_0, 1, 1;
+    .scope S_0x620cf5969720;
 T_0 ;
     %pushi/vec4 0, 0, 2;
-    %store/vec4 v0x58a6ea31c220_0, 0, 2;
+    %store/vec4 v0x620cf5980190_0, 0, 2;
     %delay 10, 0;
-    %load/vec4 v0x58a6ea31c2e0_0;
+    %load/vec4 v0x620cf5980250_0;
     %cmpi/e 1, 0, 4;
     %jmp/0xz  T_0.0, 4;
     %jmp T_0.1;
 T_0.0 ;
-    %vpi_call/w 3 13 "$error", "Error: Input: 00, got %b, expected 0001", v0x58a6ea31c2e0_0 {0 0 0};
+    %vpi_call/w 3 13 "$error", "Error: Input: 00, got %b, expected 0001", v0x620cf5980250_0 {0 0 0};
 T_0.1 ;
     %pushi/vec4 1, 0, 2;
-    %store/vec4 v0x58a6ea31c220_0, 0, 2;
+    %store/vec4 v0x620cf5980190_0, 0, 2;
     %delay 10, 0;
-    %load/vec4 v0x58a6ea31c2e0_0;
+    %load/vec4 v0x620cf5980250_0;
     %cmpi/e 2, 0, 4;
     %jmp/0xz  T_0.2, 4;
     %jmp T_0.3;
 T_0.2 ;
-    %vpi_call/w 3 16 "$error", "Error: Input: 01, got %b, expected 0010", v0x58a6ea31c2e0_0 {0 0 0};
+    %vpi_call/w 3 16 "$error", "Error: Input: 01, got %b, expected 0010", v0x620cf5980250_0 {0 0 0};
 T_0.3 ;
-    %vpi_call/w 3 17 "$finish" {0 0 0};
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0x620cf5980190_0, 0, 2;
+    %delay 10, 0;
+    %load/vec4 v0x620cf5980250_0;
+    %cmpi/e 4, 0, 4;
+    %jmp/0xz  T_0.4, 4;
+    %jmp T_0.5;
+T_0.4 ;
+    %vpi_call/w 3 19 "$error", "Error: Input: 01, got %b, expected 0010", v0x620cf5980250_0 {0 0 0};
+T_0.5 ;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x620cf5980190_0, 0, 2;
+    %delay 10, 0;
+    %load/vec4 v0x620cf5980250_0;
+    %cmpi/e 8, 0, 4;
+    %jmp/0xz  T_0.6, 4;
+    %jmp T_0.7;
+T_0.6 ;
+    %vpi_call/w 3 22 "$error", "Error: Input: 01, got %b, expected 0010", v0x620cf5980250_0 {0 0 0};
+T_0.7 ;
+    %vpi_call/w 3 23 "$finish" {0 0 0};
     %end;
     .thread T_0;
 # The file index is used to find the file name in the following table.

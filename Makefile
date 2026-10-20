@@ -3,7 +3,7 @@ CC = iverilog
 FLAGS = -g2012 -Irtl
 
 RTL_FILES = $(shell find rtl -name "*.v")
-TB_FILE = tb/tb_muxs/tb_mux21.v
+TB_FILE = tb/tb_bitwise_gates/tb_bitwise_and.v
 TARGET = sim.out
 
 .PHONY: all clean compile run
